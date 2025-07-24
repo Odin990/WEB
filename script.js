@@ -1,3 +1,10 @@
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('hidden');
+}
+
+document.getElementById('burgerBtn').addEventListener('click', toggleMenu);
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Tombol "Jelajahi Bisnis" untuk masuk ke halaman bisnis unggulan
     const exploreBusinessesBtn = document.querySelector('section#home button.bg-primary-600');
